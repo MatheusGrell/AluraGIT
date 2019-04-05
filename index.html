@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <form id="form_contrato">
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+            <label for="Nome">Nome:</label>
+            <input type="text" pattern="[a-zA-Z]+" id="nome" />
+    </br>
+            <label for="Endereco">Endereço:</label>
+            <input type="text" id="endereco" />
+    </br>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="Cidade" />
+    </br>
+            <label for="Estado">Estado:</label>
+            <select name="select">
+                    <option value="SP">AC</option>
+                    <option value="SP">AL</option>
+                    <option value="SP">AP</option>
+                    <option value="SP">AM</option>
+                    <option value="SP">BA</option>
+                    <option value="SP">CE</option>
+                    <option value="SP">DF</option>
+                    <option value="SP">ES</option>
+                    <option value="SP">GO</option> 
+                    <option value="SP">MA</option>
+                    <option value="SP">MT</option>
+                    <option value="SP">MS</option>
+                    <option value="SP">MG</option>
+                    <option value="SP">PA</option>
+                    <option value="SP">PB</option>
+                    <option value="SP">PR</option>
+                    <option value="SP">PE</option>
+                    <option value="SP">PI</option>
+                    <option value="SP">RJ</option> 
+                    <option value="SP">RN</option>
+                    <option value="SP">RS</option>
+                    <option value="SP">RO</option>
+                    <option value="SP">RR</option>
+                    <option value="SP">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SP">SE</option>
+                    <option value="SP">TO</option>
+            </select>
+        </fieldset>
+        
+        
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="naturezaCargo">Natureza do cargo</label>
+            </br>
+                <input type="radio" name="cargo" value="gerencia"> Gerência
+                <input type="radio" name="cargo" value="financeiro"> Financeiro
+                <input type="radio" name="cargo" value="recepcao"> Recepção
+                <input type="radio" name="cargo" value="administrativo"> Administrativo
+                <input type="radio" name="cargo" value="juridico"> Jurídico
+            </br>
+                <label for="AreaInteresse">Área de Interesse</label>
+            </br>
+                <input type="checkbox" name="interesse" value="computacao"> Computação
+                <input type="checkbox" name="interesse" value="biologia"> Biologia
+                <input type="checkbox" name="interesse" value="recepcao"> Meio Ambiente
+                <input type="checkbox" name="interesse" value="engenharia"> Engenharia
+                <input type="checkbox" name="interesse" value="historia"> História
+        </br>
+                <label for="curriculo">Mini-currículo:</label>
+                <textarea id="curriculo"></textarea>
+
+            </fieldset>
+
+            <button type="submit" form="form_contrato" value="Enviar">Enviar</button>
+            <button type="reset" form="form_contrato" value="Enviar">Limpar</button>
+    </form>
+</body>
+</html>
