@@ -1,0 +1,19 @@
+.card{
+    border: 2px solid black;
+    overflow: auto;
+}
+
+.imagem_noticia{
+    float: left;
+    width:auto;
+    height: auto;
+}
+
+.logo{
+    float: right;
+    margin-top: 200px;
+}
+
+h2{
+    text-align: left;
+}
