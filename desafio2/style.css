@@ -1,7 +1,23 @@
-.card{
-    border: 2px solid black;
-    overflow: auto;
+*{
+    margin: 0 auto;
+    padding: 0;
 }
+
+body{
+    background-color: #E9E9E9
+}
+
+.card{
+    border-radius: 10px;
+    border: 3px solid #AAAAAA;
+    background-color: #F7F7F7;
+    overflow: auto;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
 .imagem_noticia{
     float: left;
@@ -9,11 +25,23 @@
     height: auto;
 }
 
-.logo{
-    float: right;
-    margin-top: 200px;
+h3{
+    padding: 30px;
+    text-align: left;
+    display: inline-table;
+    margin-top: 100px;
+    color:#888888;
 }
 
-h2{
+.logo{
+    float: right;
+    margin-top: 80px;
+}
+
+p{ 
+    font-size: 50px;
+    padding: 30px;
+    margin-left: 20px;
+    display: table-cell;
     text-align: left;
 }
