@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style1.css">
 </head>
+
 <body>
     <form id="form_contrato">
-        <fieldset>
-        <legend>Dados Pessoais</legend>
+        <fieldset class="field1">
+            <legend>Dados Pessoais</legend>
             <label for="Nome">Nome:</label>
-            <input type="text" pattern="[a-zA-Z]+" id="nome"/>
-    </br>
+            <input type="text" pattern="[a-zA-Z]+" id="nome" />
+            </br>
             <label for="Endereco">Endereço:</label>
             <input type="text" id="endereco" />
-    </br>
+            </br>
             <label for="Cidade">Cidade:</label>
             <input type="text" id="Cidade" />
-    </br>
+            </br>
             <label for="Estado">Estado:</label>
             <select name="select">
-                    <option value="SP">AC</option>
-                    <option value="SP">AL</option>
-                    <option value="SP">AP</option>
-                    <option value="SP">AM</option>
-                    <option value="SP">BA</option>
-                    <option value="SP">CE</option>
-                    <option value="SP">DF</option>
-                    <option value="SP">ES</option>
-                    <option value="SP">GO</option> 
-                    <option value="SP">MA</option>
-                    <option value="SP">MT</option>
-                    <option value="SP">MS</option>
-                    <option value="SP">MG</option>
-                    <option value="SP">PA</option>
-                    <option value="SP">PB</option>
-                    <option value="SP">PR</option>
-                    <option value="SP">PE</option>
-                    <option value="SP">PI</option>
-                    <option value="SP">RJ</option> 
-                    <option value="SP">RN</option>
-                    <option value="SP">RS</option>
-                    <option value="SP">RO</option>
-                    <option value="SP">RR</option>
-                    <option value="SP">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SP">SE</option>
-                    <option value="SP">TO</option>
+                <option value="SP">Acre</option>
+                <option value="SP">Alagoas</option>
+                <option value="SP">Amapá</option>
+                <option value="SP">Amazonas</option>
+                <option value="SP">Bahia</option>
+                <option value="SP">Ceará</option>
+                <option value="SP">Distrito Federal</option>
+                <option value="SP">Espírito Santo</option>
+                <option value="SP">Goiás</option>
+                <option value="SP">Maranhão</option>
+                <option value="SP">Mato Grosso</option>
+                <option value="SP">Mato Grosso do Sul</option>
+                <option value="SP">Minas Gerais</option>
+                <option value="SP">Pará</option>
+                <option value="SP">Paraíba</option>
+                <option value="SP">Paraná</option>
+                <option value="SP">Pernambuco</option>
+                <option value="SP">Piauí</option>
+                <option value="SP">Rio de Janeiro</option>
+                <option value="SP">Rio Grande do Norte</option>
+                <option value="SP">Rio Grande do Sul</option>
+                <option value="SP">Rondônia</option>
+                <option value="SP">Roraima</option>
+                <option value="SP">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SP">Sergipe</option>
+                <option value="SP">Tocantins</option>
             </select>
         </fieldset>
-        
-        
-            <fieldset>
-                <legend>Dados Profissionais</legend>
-                <label for="naturezaCargo">Natureza do cargo</label>
-            </br>
-                <input type="radio" name="cargo" value="gerencia"> Gerência
-                <input type="radio" name="cargo" value="financeiro"> Financeiro
-                <input type="radio" name="cargo" value="recepcao"> Recepção
-                <input type="radio" name="cargo" value="administrativo"> Administrativo
-                <input type="radio" name="cargo" value="juridico"> Jurídico
-            </br>
-                <label for="AreaInteresse">Área de Interesse</label>
-            </br>
-                <input type="checkbox" name="interesse" value="computacao"> Computação
-                <input type="checkbox" name="interesse" value="biologia"> Biologia
-                <input type="checkbox" name="interesse" value="recepcao"> Meio Ambiente
-                <input type="checkbox" name="interesse" value="engenharia"> Engenharia
-                <input type="checkbox" name="interesse" value="historia"> História
-        </br>
-                <label for="curriculo">Mini-currículo:</label>
-                <textarea id="curriculo"></textarea>
 
-            </fieldset>
 
-            <button type="submit" form="form_contrato" value="Enviar">Enviar</button>
-            <button type="reset" form="form_contrato" value="Enviar">Limpar</button>
+        <fieldset class="field2">
+            <legend>Dados Profissionais</legend>
+            <label for="naturezaCargo">Natureza do cargo</label>
+            </br>
+            <input type="radio" name="cargo" value="gerencia"> Gerência
+            <input type="radio" name="cargo" value="financeiro"> Financeiro
+            <input type="radio" name="cargo" value="recepcao"> Recepção
+            <input type="radio" name="cargo" value="administrativo"> Administrativo
+            <input type="radio" name="cargo" value="juridico"> Jurídico
+            </br>
+            <label for="AreaInteresse">Área de Interesse</label>
+            </br>
+            <input type="checkbox" name="interesse" value="computacao"> Computação
+            <input type="checkbox" name="interesse" value="biologia"> Biologia
+            <input type="checkbox" name="interesse" value="recepcao"> Meio Ambiente
+            <input type="checkbox" name="interesse" value="engenharia"> Engenharia
+            <input type="checkbox" name="interesse" value="historia"> História
+            </br>
+            <label for="curriculo">Mini-currículo:</label>
+            <textarea id="curriculo"></textarea>
+
+        </fieldset>
+
+        <button type="submit" form="form_contrato" value="Enviar">Enviar</button>
+        <button type="reset" form="form_contrato" value="Enviar">Limpar</button>
     </form>
 </body>
+
 </html>
